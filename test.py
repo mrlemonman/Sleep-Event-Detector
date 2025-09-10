@@ -4,7 +4,7 @@ import sounddevice as sd
 import time
 from datetime import datetime
 
-def test_tflite_model_simple(model_path="working_sleep_detector.tflite"):
+def test_tflite_model_simple(model_path="sleep_detector.tflite"):
     """
     Simple test: Record 5 seconds, analyze with TFLite, show results
     """
@@ -24,7 +24,7 @@ def test_tflite_model_simple(model_path="working_sleep_detector.tflite"):
         
     except Exception as e:
         print(f"Error loading model: {e}")
-        print("Make sure you have the working_sleep_detector.tflite file")
+        print("Make sure you have the sleep_detector.tflite file")
         return
     
     # Define labels and thresholds
@@ -163,11 +163,11 @@ if __name__ == "__main__":
     # Check if model file exists
     import os
     
-    model_file = "working_sleep_detector.tflite"
+    model_file = "_sleep_detector.tflite"
     
     if not os.path.exists(model_file):
         print(f"Model file '{model_file}' not found!")
-        print("Please run the working_tflite_model.py script first to create the model.")
+        print("Please run the _tflite_model.py script first to create the model.")
         
         # Try alternative model names
         alternatives = ["sleep_event_detector.tflite", "minimal_detector.tflite"]
