@@ -1,0 +1,23 @@
+# TensorFlow for model conversion and TFLite
+tensorflow>=2.15.0
+
+# TensorFlow Hub for loading YAMNet
+tensorflow-hub>=0.14.0
+
+# Numpy for array operations
+numpy>=1.25.0
+
+# Sounddevice for audio recording
+sounddevice>=0.4.8
+
+# Joblib for loading sklearn classifier
+joblib>=1.3.0
+
+# SciPy is sometimes required by sounddevice and joblib
+scipy>=1.11.0
+
+# Optional: matplotlib for plotting (if needed later)
+matplotlib>=3.8.0
+
+# Optional: pandas for saving/processing summaries
+pandas>=2.1.0
